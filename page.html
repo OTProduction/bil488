@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tweet Search Engine</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="javascript.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div id="wrapper">	
+	<div id="header">
+		<h1>Tweet Search Engine</h1>
+	</div>
+	<div id="content">
+		<p><b>Type any keywords and press the Search button. The most recent 5 tweets about keywords you typed will be listed!<br/>
+		The tweets will be automatically refreshed in every 10 seconds.</b></p>
+		
+		<form id="form" onsubmit="return false">
+			<input type="text" id="text" name="searchedWords" size="50" >
+			<input onclick="f()" id="button" type="submit" value="Search">
+		</form>
+		<hr/>
+		<div id="container">
+		</div>
+	</div>
+	<div id="footer">
+		<b><p>Developed by ONUR TASAR</p></b>
+	</div>
+	
+</div>
+</body>
+
+</html>
+
